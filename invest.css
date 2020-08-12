@@ -153,6 +153,23 @@ nav {
 	.grid-item {
 		height: 28.5em;
 	}
+  #toast-n {
+  font-family: 'Roboto';
+  position: fixed;
+  max-width: 700px;
+  min-width: 200px;
+  background: rgba(236, 240, 241, 1);
+  border: 2px solid black;
+  padding: 1em;
+  bottom: 0;
+  margin-left: 0;
+  border-radius: 5px;
+  z-index: 100000;
+  bottom: 0;
+  left: 0;
+  transform: scale(1.8);
+  transform-origin: bottom left;
+  }
 }
 
 
@@ -196,17 +213,17 @@ text-align:left;
 }
 @media (max-width: 1000px){
 	.information--header {
-		font-size: 40px;
-	}
-	.information--text {
-	  font-size: 22px;
-	}
-	.title-tag-h1 {
-		font-size: 92px;
-	}
-	.secondary-tag-p {
-		font-size: 30px;
-	}
+    font-size: 50px;
+  }
+  .information--text {
+    font-size: 30px;
+  }
+  .title-tag-h1 {
+    font-size: 115px;
+  }
+  .secondary-tag-p {
+    font-size: 32px;
+  }
 }
 
 

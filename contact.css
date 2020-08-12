@@ -137,6 +137,7 @@ nav {
   flex-wrap: wrap;                     
   justify-content: space-around; 
 }
+/*TRBL*/
 .grid-item {
   flex: 0 0 32%;                      
   height: 24em;
@@ -152,18 +153,38 @@ nav {
 	.grid-item {
 		height: 28.5em;
 	}
+  #toast-n {
+  font-family: 'Roboto';
+  position: fixed;
+  max-width: 700px;
+  min-width: 200px;
+  background: rgba(236, 240, 241, 1);
+  border: 2px solid black;
+  padding: 1em;
+  bottom: 0;
+  margin-left: 0;
+  border-radius: 5px;
+  z-index: 100000;
+  bottom: 0;
+  left: 0;
+  transform: scale(1.8);
+  transform-origin: bottom left;
+  }
 }
 
+/**/
 
 #container--
 {
 width:800px;
 margin:0 auto;
+/*background: blue;*/
 }
 
 #box--
 {
 width:100%;
+/*height:200px;*/
 text-align:left;
 }
 
@@ -174,6 +195,7 @@ text-align:left;
 	font-weight: bold;
 }
 .information--text {
+  /*text-align: justify;*/
   font-family: 'Roboto';
   font-size: 18px;
 }
@@ -193,18 +215,40 @@ text-align:left;
 }
 @media (max-width: 1000px){
 	.information--header {
-		font-size: 40px;
-	}
-	.information--text {
-	  font-size: 22px;
-	}
-	.title-tag-h1 {
-		font-size: 92px;
-	}
-	.secondary-tag-p {
-		font-size: 30px;
-	}
+    font-size: 50px;
+  }
+  .information--text {
+    font-size: 30px;
+  }
+  .title-tag-h1 {
+    font-size: 115px;
+  }
+  .secondary-tag-p {
+    font-size: 32px;
+  }
 }
+/*.ending--container {
+    background-color: orange;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 100px;
+    width: 100%;
+    overflow:hidden;
+}*/
+/*..ending--container-tag {
+	width: 100%;
+	height: 6vh;
+	margin-top: 3em;
+	background-color: #cccccc;
+	vertical-align: middle;
+}*/
+/*.information--text:after {
+  content: "";
+  display: inline-block;
+  width: 100%;
+
+}*/
 
 .container {
   margin: 0 auto;
@@ -283,6 +327,15 @@ text-align:left;
     border-radius: 5px;
 }
 
+/*.caroimage {
+  opacity: 1;
+}
+.caroimage {
+  filter: brightness(98%);
+}
+.caroimage:hover {
+  filter: brightness(50%);
+}*/
 .carolol:hover .caroimage {
   filter: brightness(50%);
 }
@@ -297,8 +350,8 @@ text-align:left;
 
 .grid-child {
   width: 32%;
-  padding-bottom: 32%; 
-  margin-bottom: 2%;
+  padding-bottom: 32%; /* Same as width, sets height */
+  margin-bottom: 2%; /* (100-32*3)/2 */
   position: relative;
   min-height: 600px;
 }

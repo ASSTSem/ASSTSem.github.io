@@ -1,31 +1,44 @@
 html {
-  scroll-behavior: smooth;
-  font-family: 'Bebas Neue', cursive;
-  height: 100%;
+	scroll-behavior: smooth;
+	font-family: 'Bebas Neue', cursive;
+  	height: 100%;
 }
+
 body {
-  font-family: 'Bebas Neue', cursive;
-  height: 100%;
+	font-family: 'Bebas Neue', cursive;
+	height: 100%;
 }
 nav {
-  text-shadow:0.02em 0 white,0 0.02em white,-0.02em 0 white,0 -0.02em white;
+	text-shadow:
+        0.02em 0 white,
+        0 0.02em white,
+        -0.02em 0 white,
+        0 -0.02em white;
 }
+
+
 .nav-link {
-  font-size: 26.5px;
+	font-size: 26.5px;
 }
+
 .smaller-nav-link {
-  font-size: 26.5px;
+	font-size: 26.5px;
 }
+
 .website-branding {
-  font-size: 26.5px;
+	font-size: 26.5px;
 }
+
+
+
+
 @keyframes upanddown {
-  45% {
-    transform: translateY(-20%);
-  }
-  100% {
-    transform: translateY(0);
-  }
+	45% {
+    	transform: translateY(-20%);
+  	}
+  	100% {
+    	transform: translateY(0);
+  	}
 }
 .main-tag {
   display: flex;
@@ -33,54 +46,66 @@ nav {
   justify-content: center;
   flex-grow: 1;
   min-height: 350px;
-  background: rgb(10,51,68);
-  background: linear-gradient(90deg, rgba(10,51,68,1) 0%, rgba(26,40,42,1) 50%, rgba(18,74,96,1) 100%);
+	background: rgb(10,51,68);
+	background: linear-gradient(90deg, rgba(10,51,68,1) 0%, rgba(26,40,42,1) 50%, rgba(18,74,96,1) 100%);
   height: 70vh;
 }
+
 @media only screen and (max-device-width: 500px) {
-  .main-tag {
-    height: 65vh;
-  }
+	.main-tag {
+		height: 65vh;
+	}
 }
+
 .main-child {
-  text-align: center;
-  color: white;
-  text-shadow:0.02em 0 black,0 0.02em black,-0.02em 0 black,0 -0.02em black;
+	text-align: center;
+	color: white;
+	text-shadow:
+        0.02em 0 black,
+        0 0.02em black,
+        -0.02em 0 black,
+        0 -0.02em black;
 }
+
 .title-tag-h1 {
-  font-size: 60px;
+	font-size: 60px;
 }
 .secondary-tag-p {
-  font-size: 26.5px;
+	font-size: 26.5px;
 }
+
 .secondary-tag-h1 {
-  margin-bottom: 1.7%;
-  font-size: 42px;
+	margin-bottom: 1.7%;
+	font-size: 42px;
 }
+
 .div--information {
-  margin-top: 2%;
+	margin-top: 2%;
 }
+
 .text-center {
-  text-align: center;
+	text-align: center;
 }
 @media only screen and (max-width: 600px) {
-  .title-tag-h1 {
-    font-size: 500px;
-  }
-  .secondary-tag-p {
-    font-size: 35px;
-  }
+	.title-tag-h1 {
+		font-size: 500px;
+	}
+	.secondary-tag-p {
+		font-size: 35px;
+	}
 }
+
 .scroll-indicator {
-  animation: upanddown 1.5s ease infinite;
+	animation: upanddown 1.5s ease infinite;
 }
+
 .btn-read-more:hover {
-  color: white;
-  text-decoration: none;
+	color: white;
+	text-decoration: none;
 }
 .btn-learn-more:hover {
-  color: white;
-  text-decoration: none;
+	color: white;
+	text-decoration: none;
 }
 .btn {
   display: inline-block;
@@ -97,81 +122,153 @@ nav {
   padding: 0.6em 0.6em 0.6em 0.6em;
 }
 .btn:hover {
-  transform: scale(1.05);
+	transform: scale(1.05);
 }
 .inner--icon {
-  font-size: 90px;
-}
-.inner--text {
-  margin-top: -1em;
-}
-.grid {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
+	font-size: 90px;
 }
 
+.inner--text {
+	margin-top: -1em;
+}
+
+.grid {
+  display: flex;                       
+  flex-wrap: wrap;                     
+  justify-content: space-around; 
+}
+/*TRBL*/
 .grid-item {
-  flex: 0 0 32%;
+  flex: 0 0 32%;                      
   height: 24em;
   margin-bottom: 5px;
   background: #f2f2f2;
   border: 2px solid #1a282a;
   border-radius: 5px;
   padding: 0% 2% 2% 2%;
+
 }
+
 @media (max-width: 1000px){
-  .grid-item {
-    height: 28.5em;
+	.grid-item {
+		height: 28.5em;
+	}
+  #toast-n {
+  font-family: 'Roboto';
+  position: fixed;
+  max-width: 700px;
+  min-width: 200px;
+  background: rgba(236, 240, 241, 1);
+  border: 2px solid black;
+  padding: 1em;
+  bottom: 0;
+  margin-left: 0;
+  border-radius: 5px;
+  z-index: 100000;
+  bottom: 0;
+  left: 0;
+  transform: scale(1.8);
+  transform-origin: bottom left;
+  }
+  #toast-n {
+  font-family: 'Roboto';
+  position: fixed;
+  max-width: 700px;
+  min-width: 200px;
+  background: rgba(236, 240, 241, 1);
+  border: 2px solid black;
+  padding: 1em;
+  bottom: 0;
+  margin-left: 0;
+  border-radius: 5px;
+  z-index: 100000;
+  bottom: 0;
+  left: 0;
+  transform: scale(1.5);
+  transform-origin: bottom left;
+  }
+  .btn-learn-more {
+    font-size: 28px;
   }
 }
 
-#container--{
-  width:800px;
-  margin:0 auto;
+/**/
+
+#container--
+{
+width:800px;
+margin:0 auto;
+/*background: blue;*/
 }
-#box--{
-  width:100%;
-  text-align:left;
+
+#box--
+{
+width:100%;
+/*height:200px;*/
+text-align:left;
 }
+
 .information--header {
-  font-family: 'Roboto';
-  font-size: 35px;
-  color: #007ece;
-  font-weight: bold;
+	font-family: 'Roboto';
+	font-size: 35px;
+	color: #007ece;
+	font-weight: bold;
 }
 .information--text {
+  /*text-align: justify;*/
   font-family: 'Roboto';
   font-size: 18px;
 }
 .learnmore--link {
-  color: #007ece;
+	color: #007ece;
 }
 .learnmore--link:hover {
-  color: #007ece;
+	color: #007ece;
 }
 .full-image {
-  width: 100%;
-  border-radius: 5px;
-  margin-top: 4em;
-  margin-bottom: 4em;
-  border: 4px solid darkgrey;
+	width: 100%;
+	border-radius: 5px;
+	margin-top: 4em;
+	margin-bottom: 4em;
+	border: 4px solid darkgrey;
   filter: brightness(90%);
 }
 @media (max-width: 1000px){
-  .information--header {
-    font-size: 40px;
+	.information--header {
+    font-size: 50px;
   }
   .information--text {
-    font-size: 22px;
-  }
-  .title-tag-h1 {
-    font-size: 92px;
-  }
-  .secondary-tag-p {
     font-size: 30px;
   }
+  .title-tag-h1 {
+    font-size: 115px;
+  }
+  .secondary-tag-p {
+    font-size: 32px;
+  }
 }
+/*.ending--container {
+    background-color: orange;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 100px;
+    width: 100%;
+    overflow:hidden;
+}*/
+/*..ending--container-tag {
+	width: 100%;
+	height: 6vh;
+	margin-top: 3em;
+	background-color: #cccccc;
+	vertical-align: middle;
+}*/
+/*.information--text:after {
+  content: "";
+  display: inline-block;
+  width: 100%;
+
+}*/
 
 .container {
   margin: 0 auto;
@@ -211,7 +308,7 @@ nav {
   color: #cccccc;
 }
 .ending--h2 {
-  color: white;
+	color: white;
 }
 #toast-n {
   font-family: 'Roboto';
@@ -226,6 +323,9 @@ nav {
   border-radius: 5px;
   z-index: 100000;
 }
+
+
+
 #toast-n .toast-n-child {
   color: #464646;
   right: 8px;
@@ -234,31 +334,43 @@ nav {
   font-size: 20px;
   cursor: pointer;
 }
+
+
 @media all and (max-width: 900px) {
   #google-translate-element {
     width: 500px;
   }
 }
+
 .grid-parent {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   font-family: 'Roboto';
 }
+
 .grid-child {
   width: 32%;
-  padding-bottom: 32%;
-
-  margin-bottom: 2%;
-
+  padding-bottom: 32%; /* Same as width, sets height */
+  margin-bottom: 2%; /* (100-32*3)/2 */
   position: relative;
   min-height: 600px;
 }
+
 .carousel-inner {
-  border: 4px solid darkgrey;
-  border-radius: 5px;
+    border: 4px solid darkgrey;
+    border-radius: 5px;
 }
 
+/*.caroimage {
+  opacity: 1;
+}
+.caroimage {
+  filter: brightness(98%);
+}
+.caroimage:hover {
+  filter: brightness(50%);
+}*/
 .carolol:hover .caroimage {
   filter: brightness(50%);
 }
