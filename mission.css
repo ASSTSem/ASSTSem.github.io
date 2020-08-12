@@ -169,6 +169,14 @@ nav {
   transform: scale(1.8);
   transform-origin: bottom left;
   }
+  #main-logo {
+    display: none;
+  }
+  .nav-link {
+    font-size: 43px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
 }
 
 

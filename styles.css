@@ -176,6 +176,14 @@ nav {
   .btn-learn-more {
     font-size: 28px;
   }
+  #main-logo {
+    display: none;
+  }
+  .nav-link {
+    font-size: 43px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
 }
 
 /**/
