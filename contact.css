@@ -170,6 +170,14 @@ nav {
   transform: scale(1.8);
   transform-origin: bottom left;
   }
+  #main-logo {
+    display: none;
+  }
+  .nav-link {
+    font-size: 41px;
+    margin-left: 13px;
+    margin-right: 13px;
+  }
 }
 
 /**/
@@ -355,3 +363,11 @@ text-align:left;
   position: relative;
   min-height: 600px;
 }
+
+.goog-te-banner-frame.skiptranslate { display: none !important;} 
+body { top: 0px !important; }
+#goog-gt-tt{display: none !important; top: 0px !important; } 
+.goog-tooltip skiptranslate{display: none !important; top: 0px !important; } 
+.activity-root { display: hide !important;} 
+.status-message { display: hide !important;}
+.started-activity-container { display: hide !important;}
