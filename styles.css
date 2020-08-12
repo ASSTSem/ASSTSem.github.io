@@ -7,6 +7,7 @@ html {
 body {
 	font-family: 'Bebas Neue', cursive;
 	height: 100%;
+  /*padding: 0;*/
 }
 nav {
 	text-shadow:
