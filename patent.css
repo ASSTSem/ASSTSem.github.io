@@ -186,6 +186,13 @@ a:hover {
     margin-left: 13px;
     margin-right: 13px;
   }
+  .card-title {
+    font-size: 29px;
+    color: black;
+  }
+  .card-text {
+    font-size: 26px;
+  }
 }
 
 /**/
