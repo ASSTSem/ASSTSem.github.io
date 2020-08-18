@@ -181,6 +181,13 @@ nav {
   .btn-learn-more {
     font-size: 30px;
   }
+  .card-title {
+    font-size: 29px;
+    color: black;
+  }
+  .card-text {
+    font-size: 26px;
+  }
 }
 
 
