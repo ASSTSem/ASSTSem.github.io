@@ -45,12 +45,29 @@ nav {
   flex-direction: column;
   justify-content: center;
   flex-grow: 1;
-  min-height: 350px;
-	background: rgb(10,51,68);
-	background: linear-gradient(90deg, rgba(10,51,68,1) 0%, rgba(26,40,42,1) 50%, rgba(18,74,96,1) 100%);
+  min-height: 600px;
+  background: linear-gradient(6deg, #2b92a1, #0a3344, #124a60, #182f56, #430d5c, #7b005c, #2b92a1);
+  background-size: 1400% 1400%;
+  -webkit-animation: AnimationName 30s ease infinite;
+  -moz-animation: AnimationName 30s ease infinite;
+  animation: AnimationName 30s ease infinite;
   height: 70vh;
 }
-
+@-webkit-keyframes AnimationName {
+    0%{background-position:36% 0%}
+    50%{background-position:65% 100%}
+    100%{background-position:36% 0%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:36% 0%}
+    50%{background-position:65% 100%}
+    100%{background-position:36% 0%}
+}
+@keyframes AnimationName {
+    0%{background-position:36% 0%}
+    50%{background-position:65% 100%}
+    100%{background-position:36% 0%}
+}
 @media only screen and (max-device-width: 500px) {
 	.main-tag {
 		height: 65vh;
